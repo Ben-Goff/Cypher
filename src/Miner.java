@@ -18,7 +18,7 @@ public class Miner {
         int c = br.read();
         currentIndex = c % 32; //First character
         while ((c = br.read()) != -1) {
-            if (c < 91) {
+            if (c < 123) {
                 previousIndex = currentIndex;
                 currentIndex = c % 32;
                 tMatrix[previousIndex][currentIndex]++; //add 1 to transition position in matrix
